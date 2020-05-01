@@ -1,10 +1,11 @@
 INSERT INTO users (user_name, password)
 VALUES
-  ('user1', 'user1password'),
-  ('user2', 'user2password'),
-  ('user3', 'user3password')
+  ('user1', '$2a$12$aH7IK0dM.sZf/ysCaYppyORtNEFqNTggvszd85N7RatSDlVw73Ore'),
+  ('user2', '$2a$12$LM7atALdf1FAKfBtiqb0quuK3nlb.WeR4POjBthx7BaADwhUbh5TO'),
+  ('user3', '$2a$12$G5FMc3mhn5z3a7ULY7aRNODfBSLVWSBG6rOw/LAYxHB1SBrBWJOay')
 ;
 
+/* user1password, user2password, user3password are passwords for users 1-3 */
 
 INSERT INTO portfolio_items (user_id, asset_name, asset_class)
 VALUES
