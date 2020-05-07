@@ -8,9 +8,12 @@ const portfoliosRouter = require('./portfolios/portfolios-router');
 const assetsRouter = require('./portfolios/assets-router');
 const authRouter = require('./auth/auth-router');
 const usersRouter = require('./users/users-router');
+const config = require('./config')
 
 const app = express();
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
+
+console.log(config.JWT_SECRET)
 app.use(morgan(morganSetting));
 app.use(helmet());
 app.use(cors(
