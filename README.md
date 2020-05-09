@@ -1,8 +1,8 @@
 ## Asset Trend
-Live app: [https://asset-trend-app.now.sh/]
-Live server: [https://gentle-caverns-99473.herokuapp.com/]
-Demo user: Demo
-Demo password: ASDFasdf12!@
+* Live app: [https://asset-trend-app.now.sh/]
+* Live server: [https://gentle-caverns-99473.herokuapp.com/]
+* Demo user: Demo
+* Demo password: ASDFasdf12!@
 
 ### API Documentation
 * POST /auth/login
