@@ -53,8 +53,7 @@ function cleanTables(db) {
   return db.raw(
     `TRUNCATE
       users,
-      portfolio_items,
-      RESTART IDENTITY CASCADE`
+      portfolio_items`
   );
 }
 function seedUsers(db, users) {
@@ -65,12 +64,6 @@ function seedUsers(db, users) {
   return db
     .into("users")
     .insert(preppedUsers)
-    .then(() =>
-      // update the auto sequence to stay in sync
-      db.raw(`SELECT setval('asset_trend_users_id_seq', ?)`, [
-        users[users.length - 1].id,
-      ])
-    );
 }
 function makeAuthHeader(user, secret = process.env.JWT_SECRET) {
   const token = jwt.sign({ user_id: user.id }, secret, {

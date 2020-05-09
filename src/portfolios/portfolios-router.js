@@ -18,21 +18,11 @@ portfoliosRouter
       })
       .catch(next);
   });
-// .delete((req, res, next) => {
-//   PortfoliosService.deleteItem(
-//     req.app.get('db'),
-//     req.params.assetId
-//   )
-//     .then(response => {
-//       res.json(response);
-//     })
-//     .catch(next);
-// });
+
 
 portfoliosRouter
   .route('/')
   .post(requireAuth, jsonBodyParser, (req, res, next) => {
-    console.log('hello');
     const { assetName, assetClass, user_id } = req.body;
     const newItem = { asset_name: assetName, asset_class: assetClass, user_id };
 

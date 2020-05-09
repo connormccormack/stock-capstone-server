@@ -1,3 +1,4 @@
+require('dotenv').config();
 const knex = require('knex');
 const bcrypt = require('bcryptjs');
 const app = require('../src/app');
@@ -24,7 +25,7 @@ describe('portfolios endpoints', function () {
 
   afterEach('cleanup', () => helpers.cleanTables(db));
 
-  describe.only('POST /api/portfolios/', () => {
+  describe('POST /api/portfolios/', () => {
     context('Happy path', () => {
       it('responds 201', () => {
         const newPortfolioItem = {
@@ -43,22 +44,17 @@ describe('portfolios endpoints', function () {
               .send(newPortfolioItem)
               .expect(201)
               .expect((res) => {
+                console.log("blahblahblah")
                 expect(res.body).to.have.property('user_id');
                 // expect(res.body.asset_name).to.eql(newPortfolioItem.asset_name);
                 // expect(res.body.asset_class).to.eql(newPortfolioItem.asset_class);
                 expect(res.body).to.not.have.property('password');
-              })
-              .expect((res) => {
-                db.from('portfolio_items')
-                  .select('*')
-                  .where({ id: res.body.id })
-                  .first()
-                  .then((row) => {
-                    expect(row.asset_class).to.eql(newPortfolioItem.asset_class);
-                    expect(row.asset_name).to.eql(newPortfolioItem.asset_name);
-                  });
               });
+
             return agent;
+          })
+          .catch(err => {
+            console.log(err);
           });
       });
     });
