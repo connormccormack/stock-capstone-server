@@ -24,12 +24,12 @@ Demo password: ASDFasdf12!@
 
 ### Screenshots
 
-![Landing](/images/landingPage.PNG)
-![Register](/images/registrationPage.PNG)
-![Login](/images/loginPage.PNG)
-![UserPortfolio](/images/currentUserPortfolio.PNG)
-![OtherPortfolio](/images/otherUserPortfolio.PNG)
-![AddAsset](/images/AddAsset.PNG)
+![Landing](/images/landingPage.png)
+![Register](/images/registrationPage.png)
+![Login](/images/loginPage.png)
+![UserPortfolio](/images/currentUserPortfolio.png)
+![OtherPortfolio](/images/otherUserPortfolio.png)
+![AddAsset](/images/AddAsset.png)
 
 ### Summary
 This app is designed to allow users to keep track of the assets they have in their portfolio, and see what other users have in their portfolio
