@@ -24,12 +24,13 @@
 
 ### Screenshots
 
-![Landing](/images/landingPage.png)
-![Register](/images/registrationPage.png)
-![Login](/images/loginPage.png)
-![UserPortfolio](/images/currentUserPortfolio.png)
-![OtherPortfolio](/images/otherUserPortfolio.png)
-![AddAsset](/images/AddAsset.png)
+![Landing](/images/landingP.png)
+![Register](/images/registerP.png)
+![Login](/images/loginP.png)
+![UserPortfolio](/images/currentUserP.png)
+![OtherPortfolio](/images/otherUserP.png)
+![AddAsset](/images/addAssetP.png)
+
 
 ### Summary
 This app is designed to allow users to keep track of the assets they have in their portfolio, and see what other users have in their portfolio
@@ -38,6 +39,7 @@ Functionality includes:
 * Users can see the current contents of their portfolio
 * Users can add items to their portfolio (only if logged in and viewing their OWN portfolio)
 * Users can delete items from their portfolio (only if logged in and viewing their OWN portfolio)
+* Users can share a link to their portfolio, so others can see but not edit their portfolio choices
 * Users can view another user's portfolio (if they've been given the URL), but cannot add or delete items
 * App contains a nav bar allowing users to register/sign in or logout (if signed in already)
 
